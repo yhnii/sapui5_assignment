@@ -1,0 +1,21 @@
+{  "data": [{
+    "category": "업무",
+    "text": "구매 프로세스 변경 신청의 건",
+    "rdate": "2020-05-02",
+    "status":"정상",
+    "progress": "1"
+    
+}, {
+    "category": "업무",
+    "text": "인사 프로세스 검토 회의 건",
+    "rdate": "2020-05-04",
+    "status":"정상",
+    "progress": "1"
+}, {
+    "category": "이슈",
+    "text": "자재 물류 프로세스 검증의 건",
+    "rdate": "2020-05-04",
+    "status":"지연",
+    "progress": "2"
+}]
+}

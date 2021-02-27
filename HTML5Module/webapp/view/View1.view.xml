@@ -1,0 +1,427 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" controllerName="ns.HTML5Module.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page">
+				<headerContent>
+				    <Bar id="bar0">
+				        <contentLeft>
+                            <HBox width="100%" id="hbox0">
+                                <items>
+                                    <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="업무 관리" id="button_task_management"/>
+                                    <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="협업 관리" id="button_coop_management"/>
+                                    <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="프로세스 관리" id="button_process_management"/>
+                                    <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="성과/통계 분석" id="button_analysis"/>
+                                    <Button xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Digital Space" id="button_digital_space"/>
+                                </items>
+                            </HBox>
+				        </contentLeft>
+				    <contentRight>
+				        <HBox width="100%" id="hbox1">
+				            <items>
+				                <Button xmlns="sap.m" id="button00" icon="sap-icon://search"/>
+                                <Button xmlns="sap.m" id="button01" icon="sap-icon://microphone"/>
+                                <Button xmlns="sap.m" id="button02" icon="sap-icon://activity-2"/>
+                                <Button xmlns="sap.m" id="button03" icon="sap-icon://flag"/>
+                                <Button xmlns="sap.m" id="button04" icon="sap-icon://away"/>
+                                <Button xmlns="sap.m" id="button05" icon="sap-icon://add-favorite"/>
+                                <Button xmlns="sap.m" id="button06" icon="sap-icon://employee"/>
+                                <Button xmlns="sap.m" id="button07" icon="sap-icon://list"/>
+                                <Button xmlns="sap.m" id="button08" icon="sap-icon://edit"/>
+                                <Button xmlns="sap.m" id="button09"/>
+				            </items>
+				        </HBox>
+				    </contentRight>
+				    </Bar>
+				</headerContent>
+				<content>
+                <l:VerticalLayout>
+                    <l:HorizontalLayout allowWrapping="true" content="">
+                        	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="My Work Bot" width="310px" frameType="TwoByOne" press="press" subheader="Bot BOX">
+                                <TileContent footer="">
+                                    <FeedContent subheader="" valueColor="Critical" value="12" contentText="My Work Bot은 자동화된 업무 Workplace를 구성합니다"/>
+                                </TileContent>
+                            </GenericTile>
+
+                        	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="업무 관리" width="310px" frameType="TwoByOne" press="press" subheader="업무진행">
+                                <TileContent footer="">
+                                    <FeedContent subheader="" valueColor="Error" value="" contentText=""/>
+                                </TileContent>
+                            </GenericTile>
+
+                        	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Live Process" width="310px" frameType="TwoByOne" press="press" subheader="프로세스 관리">
+                                <TileContent footer="">
+                                    <FeedContent subheader="" valueColor="Good" value="1,452" contentText="자동화된 업무 프로세스의 효과 분석 및 통계"/>
+                                </TileContent>
+                            </GenericTile>
+
+                        	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="분석 및 통계" width="310px" frameType="TwoByOne" press="press" subheader="My업무 모니터링">
+                                <TileContent footer="" unit="">
+                                    <FeedContent value="8건" contentText="지연 및 업무 개선을 위한 Live Process Check"/>
+                                </TileContent>
+                            </GenericTile>
+
+                    </l:HorizontalLayout>
+
+
+                 <l:HorizontalLayout allowWrapping="true" content="">
+                 
+                <l:content>
+                 
+
+                 
+                <HBox width="100%" id="hbox0_1614235640623">
+                 
+
+                 
+                    <items>
+                 
+
+                 
+                        <VBox width="260px" direction="Column" id="vbox0" justifyContent="SpaceBetween" class="buttonmargin" height="280px">
+                            <items>
+                                <Button xmlns="sap.m" text="진행중인 프로젝트" class="buttonsize" id="button001" width="240px"/>
+                                <Button xmlns="sap.m" text="업무 진척 분석(KPI)" class="buttonsize" id="button002" width="240px"/>
+                                <Button xmlns="sap.m" text="업무 자동화 회의" class="buttonsize" id="button003" width="240px"/>
+                            </items>                 
+                        </VBox>
+                 
+
+                 
+                        <VBox width="250px" direction="Column" id="vbox0_copy" height="245px" class="buttonmargin" justifyContent="SpaceBetween">
+                            <items>
+                                <Button xmlns="sap.m" text="프로세스 디자인" id="button004" width="240px"/>
+                                <Button xmlns="sap.m" text="Live Process" id="button005" width="240px"/>
+                                <Button xmlns="sap.m" text="업무 자동화 스케쥴" id="button006" width="240px"/>
+                            </items>     
+                        </VBox>
+                 
+
+                 
+                        <VBox width="300px" direction="Column" id="vbox0_copy2" height="280px" class="image0" justifyContent="Center">
+                        <items>
+                            <Image src="./images/digital.jpg" width="300px" height="265px" id="image0" useMap="Map"/>
+                        </items>
+
+                        </VBox>
+                 
+
+                 
+                        <VBox xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m" class="tiles" width="380px" direction="Column" id="vbox0_copy3" justifyContent="SpaceBetween" height="230px">
+                            <items>
+                                <HBox width="100%" id="hbox0_1614235738041" height="100px" justifyContent="SpaceBetween">
+                                   <items>
+                                       <GenericTile header="" id="tile4" backgroundImage="./images/calendar.png" class="tilesize" width="120px" tooltip="일정관리">
+                                       </GenericTile>
+                                        <GenericTile header="" id="tile5" class="tilesize" width="120px" backgroundImage="./images/approve.png" tooltip="전자결재"/>
+                                        <GenericTile header="" id="tile6" class="tilesize" width="120px" backgroundImage="./images/target.png" tooltip="EPR"/>
+
+                                    </items>
+                                </HBox>
+
+                                <HBox width="100%" id="hbox0_1614235738041_copy" height="100px" justifyContent="SpaceBetween">
+    
+                                    <items>
+                                        <GenericTile header="" id="tile7" class="tilesize" width="120px" backgroundImage="./images/emp.png" tooltip="CRM"/>
+                                        <GenericTile header="" id="tile8" class="tilesize" width="120px" backgroundImage="./images/digi.png" tooltip="디지털마케팅"/>
+                                        <GenericTile header="" id="tile9" class="tilesize" width="120px" backgroundImage="./images/chart.png" tooltip="자재관리"/>
+                                    </items>
+                                </HBox>
+                            </items>
+                        </VBox>
+                 
+
+                 
+                    </items>
+                 
+
+                 
+                </HBox>
+                 
+
+                 
+                </l:content>
+                 
+                </l:HorizontalLayout>
+
+                <l:HorizontalLayout allowWrapping="true" content="">
+                    
+
+                <l:content>
+                    
+
+                    <HBox width="100%" id="hbox0_1614237149357" justifyContent="SpaceBetween">
+                    
+
+                        <items>
+                    
+
+                            <VBox width="860px" direction="Column" id="vbox0_1614237162912">
+                    
+
+                                <items>
+                    
+
+                                    <Table items="{path: '/myModel01>/data'}" id="table0" headerText="📍Work List" growingThreshold="3">
+                    
+
+                                        <items>
+                    
+
+                                            <ColumnListItem type="Active" id="item0">
+                                                <cells>
+                                                    <Text text="{myModel01>category}" id="text4"/>
+                    
+                                                    <Text text="{myModel01>text}" id="text5"/>
+
+                                                    <Text text="{myModel01>rdate}" id="text6"/>
+
+                                                    <Text text="{myModel01>status}" id="text7"/>
+
+                                                    <Text text="{myModel01>progress}" id="text8"/>
+                                                    </cells>
+
+                                            </ColumnListItem>
+                    
+
+                                        </items>
+                    
+
+                                        <columns>
+                    
+
+                                            <Column id="column0">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="분류" id="label0"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>
+                    
+
+                                            <Column id="column1">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="나의 할 일" id="label1"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>
+                    
+
+                                            <Column id="column2">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="수신일" id="label2"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>
+                                             <Column id="column3">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="상태" id="label3"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>
+
+                                            <Column id="column4">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="진행 현황" id="label4"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>                                           
+                                            
+                                            
+                                            
+                                            </columns></Table>
+                    
+
+                                    <Table items="{/myModel02}" id="table1" headerText="📍업무 공유 사항" growingThreshold="2">
+                    
+
+                                        <items>
+                    
+
+                                            <ColumnListItem type="Active" id="item1">
+                    
+
+                                                <cells>
+                                                      <Text text="{myModel02>category}" id="text9"/>
+                                                       <Text text="{myModel02>text}" id="text10"/>
+                                                       <Text text="{myModel02>writer}" id="text11"/>
+                                                       <Text text="{myModel02>wdate}" id="text12"/>
+                                                    
+                                                    
+                                                    </cells>
+                    
+
+                                            </ColumnListItem>
+                    
+
+                                        </items>
+                    
+
+                                        <columns>
+                                            <Column id="column02">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="분류" id="label02"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>                    
+
+                                            <Column id="column03">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="제목" id="label03"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>
+                    
+
+                                            <Column id="column04">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="작성자" id="label04"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column>
+                    
+
+                                            <Column id="column5">
+                    
+
+                                                <header>
+                    
+
+                                                    <Label text="작성일" id="label5"/>
+                    
+
+                                                </header>
+                    
+
+                                            </Column></columns></Table>
+                    
+
+                                </items>
+                    
+
+                            </VBox>
+                    
+
+                            <HBox width="420px" id="hbox1_1614237203418" justifyContent="End">
+                    
+
+                                <items>
+                    
+
+                                    <VBox width="215px" direction="Column" id="vbox1" justifyContent="SpaceBetween">
+                    
+
+                                        <items>
+                    
+
+                                            <GenericTile header="업무스토어" id="tile4_1614237511342"/>
+                    
+
+                                            <GenericTile id="tile5_1614237538025" header="개발지원"/>
+                    
+
+                                        </items>
+                    
+
+                                    </VBox>
+                    
+
+                                    <VBox xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns="sap.m" width="215px" direction="Column" id="vbox1_copy" justifyContent="SpaceBetween">
+                    
+
+                                        <items>
+                    
+
+                                            <GenericTile header="회계관리" id="tile6_1614237552143"/>
+                    
+
+                                            <GenericTile header="고객관리" id="tile7_1614237564064"/>
+                    
+
+                                        </items>
+                    
+
+                                    </VBox>
+                    
+
+                                </items>
+                    
+
+                            </HBox>
+                    
+
+                        </items>
+                    
+
+                    </HBox>
+                    
+
+                </l:content>
+                    
+
+                </l:HorizontalLayout>
+
+                </l:VerticalLayout>
+
+	
+				</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

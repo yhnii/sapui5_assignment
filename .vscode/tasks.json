@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Build FioriDemo",
+        "type": "shell",
+        "command": "if [ ! -f ${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+        "options": {
+            "cwd": "${workspaceFolder}"
+        }
+    },
+    {
+        "type": "npm",
+        "script": "install",
+        "path": "HTML5Module/",
+        "problemMatcher": []
+    },
+    {
+        "type": "npm",
+        "script": "install",
+        "problemMatcher": []
+    },
+    {
+        "type": "typescript",
+        "tsconfig": "HTML5Module/tsconfig.json",
+        "problemMatcher": []
+    },
+    {
+        "type": "typescript",
+        "tsconfig": "HTML5Module/tsconfig.json",
+        "option": "watch",
+        "problemMatcher": []
+    }
+]
+}
